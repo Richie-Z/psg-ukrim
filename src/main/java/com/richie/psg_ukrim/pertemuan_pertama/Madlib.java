@@ -12,18 +12,19 @@ import java.util.Scanner;
  *
  * @author Richie-PC
  */
-public class Randomizer {
+public class Madlib {
 
     private Scanner scan = new Scanner(System.in);
     private String name;
     private final String[] SCEN = {
         "%s pada hari %s pergi ke Kota Palangkaraya",
         "%s pergi memancing bareng temannya pada hari %s",
-        "%s meninggal pada hari %s"
+        "%s meninggal pada hari %s",
+        "Oh tidak %s pada hari %s menghilang :("
     };
     private final int MIN = 0, MAX = this.SCEN.length - 1;
 
-    public Randomizer() {
+    public Madlib() {
         System.out.println("Nama kau siapa?!");
         this.name =  this.nameValidator(this.scan.nextLine());
     }
@@ -54,7 +55,7 @@ public class Randomizer {
           System.out.printf(this.simpleScenario(), this.name, this.getDayIndo());
     }
     public static void main(String[] args) {
-        Randomizer r = new Randomizer();
+        Madlib r = new Madlib();
         r.main();
     }
 }
