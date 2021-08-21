@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class MoneyNominal {
 
     private Scanner scan = new Scanner(System.in);
-    private int[] idCoin = {500, 200, 100, 50, 10};
+    private final int[] COIN = {500, 200, 100, 50, 10, 5};
     private int money;
     private List<Integer> pembagian = new ArrayList<>();
     private HashMap<Integer, Integer> hm = new HashMap<>();
@@ -29,11 +29,11 @@ public class MoneyNominal {
         this.pecahinGan();
         this.indexing();
     }
-
+    
     public void pecahinGan() {
-        for (int i = 0; i < this.idCoin.length; i++) {
-            int now = this.idCoin[i];
-            if (this.money > now) {
+        for (int i = 0; i < this.COIN.length; i++) {
+            int now = this.COIN[i];
+            if (this.money >= now) {
                 this.minusGan(now);
             }
             if (this.money < now) {
@@ -69,7 +69,7 @@ public class MoneyNominal {
 
     public void main() {
         for (Map.Entry<Integer, Integer> e : this.hm.entrySet()) {
-            System.out.printf("%d : %d %n",e.getKey(),e.getValue());
+            System.out.printf("%d : %d %n", e.getKey(), e.getValue());
         }
     }
 
