@@ -6,7 +6,6 @@
 package com.richie.psg_ukrim.pertemuan_kedua;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -41,7 +40,7 @@ public class Maximal {
         List<Integer> al = new ArrayList<Integer>();
         String[] index = {"pertama", "kedua", "ketiga"};
         for (String i : index) {
-            System.out.printf("Masukan angka %s : %n", i);
+            System.out.printf("Masukkan angka %s : %n", i);
             al.add(sc.nextInt());
         }
         Collections.sort(al, Collections.reverseOrder());
