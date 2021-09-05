@@ -20,7 +20,7 @@ public class Patern {
         int row = SC.nextInt();
         for (int i = 0; i < row; i++) {
             for (int j = 0; j <= i; j++) {
-                System.out.print("*");
+                System.out.print("* ");
             }
             System.out.println("");
         }
@@ -45,14 +45,14 @@ public class Patern {
         System.out.println("1. Right Triangle ");
         System.out.println("2. Triangle ");
         int pilihan = SC.nextInt();
-        switch(pilihan){
-            case 1 :
+        switch (pilihan) {
+            case 1:
                 this.rightTriangle();
                 break;
-            case 2 :
+            case 2:
                 this.triangle();
                 break;
-            default :
+            default:
                 System.out.println("PILIH YANG BENER!!");
                 this.main();
                 break;
