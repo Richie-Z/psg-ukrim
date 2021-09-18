@@ -14,14 +14,15 @@ import java.util.Scanner;
 public class LoopingSederhana {
 
     public static Scanner sc = new Scanner(System.in);
-    public final static int min = 0;
-    public static int max;
+    public static int min = 0, max = 0;
 
     public static void Looping() {
+        System.out.println("Masukan nilai min : ");
+        min = sc.nextInt();
         System.out.println("Masukan nilai max : ");
         max = sc.nextInt();
         int hasil = 0;
-        for (int i = 0; i <= max; i++) {
+        for (int i = min; i <= max; i++) {
             hasil += i;
         }
         System.out.println("Hasil : " + hasil);
