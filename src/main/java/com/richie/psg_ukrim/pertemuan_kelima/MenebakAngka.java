@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pertemuan_keempat;
+package com.richie.psg_ukrim.pertemuan_kelima;
 
 import java.util.Scanner;
 
