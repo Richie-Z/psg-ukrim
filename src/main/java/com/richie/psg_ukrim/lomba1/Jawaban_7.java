@@ -19,6 +19,13 @@ public class Jawaban_7 {
             binary += modul;
             angka = angka / 2;
         }
-        System.out.println("Hasil : " +binary);
+        System.out.println("Hasil : " + binary);
+        int hasilBalik = 0;
+        String hasil = "";
+        for (int i = Integer.parseInt(binary); i != 0; i /= 10) {
+            int logic = hasilBalik * 10 + i % 10;
+            hasil += (logic == 0) ? "0" : logic;
+        }
+        System.out.println("Hasil : " + hasil);
     }
 }
